@@ -1,0 +1,33 @@
+<div class="container">
+  <div class="row">
+
+    <!-- About me -->
+    <div class="col-lg shadow border m-1">
+      <div class="text-center">
+        <h2>About me</h2>
+        <img src="../../assets/IMGJamilaMaqsoudi.jpeg" alt="profile picture" width="256" height="256" class="rounded-circle">
+        <p>
+          Experienced Software Developer with over six years in the tech industry, specializing in creating robust software solutions and excelling in software QA automation and testing. Proficient in developing automated testing frameworks and resolving software issues using tools like Selenium, I ensure the highest quality and reliability of software products. My dual expertise in development and quality assurance allows for seamless integration and delivery of top-notch software
+        </p>
+      </div>
+    </div>
+
+    <!-- featured Project -->
+    <div class="col-lg shadow border m-1">
+      <div class="text-center">
+        <h2>Featured Project</h2>
+        <h4>{{featuredProject.name}}</h4>
+      </div>
+
+      <carousel>
+        <div *ngFor="let picture of featuredProject.pictures">
+          <slide><img src={{picture}} alt="slide" style="display: block; width: 100%;"></slide>
+        </div>
+      </carousel>
+
+      <p class="mt-2">{{featuredProject.summary}}</p>
+      <p>Visit portfolio to learn more!</p>
+
+    </div>
+  </div>
+</div>

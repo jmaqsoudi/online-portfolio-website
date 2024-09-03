@@ -1,0 +1,463 @@
+<div class="container text-center">
+  <button (click)="DownloadFile()" class="btn btn-primary mb-5 shadow border">
+    Download PDF Resume
+  </button>
+
+  <div class="pd-2">
+    <accordion [isAnimated]="true" class="shadow">
+      <accordion-group [(isOpen)]="isWorkExperinceOpen">
+        <button
+          class="btn btn-block justify-content-between d-flex w-100"
+          accordion-heading
+        >
+          <div style="visibility: hidden">></div>
+          <div class="btn-link">Work Experience</div>
+
+          <div style="width: 10.95px">
+            <div *ngIf="!isWorkExperinceOpen" style="color: white">></div>
+            <div *ngIf="isWorkExperinceOpen" style="color: white">v</div>
+          </div>
+        </button>
+
+        <div style="text-align: left">
+          <h2 class="mb-0">Software Developer Mar 2020-Dec 2021</h2>
+          <h3 class="text-primary">
+            National Statistics and Information Authority(NSIA), Kabul,
+            Afghanistan
+          </h3>
+          <ul>
+            <li>
+              Contributed to research, design, and code the eBreshna Web
+              Application.
+            </li>
+            <li>
+              Used Spring Boot and Angular to develop responsive interfaces and
+              build microservices that efficiently handle complex operations.
+            </li>
+            <li>
+              Implemented KeyClack Server, OAuth 2.0 protocol for a secure
+              central authentication and authorization of the users.
+            </li>
+            <li>
+              Used DBeaver and MySQL Workbench for querying, editing, and
+              managing data.
+            </li>
+            <li>Utilized Postman for testing, and documenting APIs.</li>
+            <li>
+              Coded and implemented python scripts for data migration using
+              Anaconda.
+            </li>
+            <li>
+              Utilized Docker and Kubernetes containerization technologies to
+              package and deploy the service in a consistent and reliable
+              manner.
+            </li>
+            <li>
+              Worked partially with AWS (Amazon Web Services) to deploy and
+              manage eBreshna in the cloud, which included leveraging services
+              like EC2, S3, and Lambda to build scalable and reliable systems.
+            </li>
+            <li>
+              Used Hibernate JPA to map database tables to Java classes and
+              performed CRUD operations on the database.
+            </li>
+            <li>
+              Debugged performance issues, reviewed and refactored existing
+              code.
+            </li>
+          </ul>
+        </div>
+        <hr />
+        <div style="text-align: left">
+          <h2 class="mb-0">
+            Software Developer | Testing Engineer Nov 2018-Mar 2020
+          </h2>
+          <h3 class="text-primary">
+            Ministry of Communication & IT, Kabul, Afghanistan
+          </h3>
+          <ul>
+            <li>
+              Contributed to creating microservices and a scalable, maintainable
+              backend for the system, implementing features such as user
+              authentication and authorization, data storage and retrieval, and
+              API integration using Spring Boot.
+            </li>
+            <li>
+              Used Angular, TypeScript, and HTML, CSS to create component-based,
+              responsive user-friendly and interactive user interfaces,
+              implemented two-way data binding, dependency injections, pipes,
+              directives, services.
+            </li>
+            <li>Used postman to test APIs and ensure system operability.</li>
+            <li>
+              Contributed in testing, including architecture, performance
+              evaluation, and project planning, also managed test processes,
+              coordinated reviews, and prepared reports while ensuring proper
+              documentation and data archiving.
+            </li>
+            <li>
+              Implemented Hibernate JPA and performed CRUD operations on the
+              database.
+            </li>
+            <li>
+              Performed necessary refactoring to enhance code quality and
+              performance.
+            </li>
+          </ul>
+        </div>
+        <hr />
+        <div style="text-align: left">
+          <h2 class="mb-0">Software Developer Intern Jan 2018-May 2018</h2>
+          <h3 class="text-primary">
+            LeanQuality Solutions Pvt. Ltd., Pune, India
+          </h3>
+          <ul>
+            <li>
+              Collaborated with the team to design, code, and implement the
+              Customer Relationship Management System (CRM).
+            </li>
+            <li>
+              Utilized technologies including HTML, CSS, and JavaScript for
+              creating the structure and styling of web pages.
+            </li>
+            <li>
+              Utilized Java to create a scalable and maintainable back-end.
+            </li>
+            <li>Utilized MySQL for database management.</li>
+            <li>
+              Actively participated in code reviews and refactorings to maintain
+              code quality and adhere to best practices.
+            </li>
+            <li>Contributed to the documentation of the system.</li>
+          </ul>
+        </div>
+        <hr />
+        <div style="text-align: left">
+          <h2 class="mb-0">Database Specialist May 2013-May 2015</h2>
+          <h3 class="text-primary">Ministry of Finance, Kabul, Afghanistan</h3>
+          <ul>
+            <li>
+              Collaborated with the team to manage and monitor databases using
+              MySQL and PostgreSQL to ensure data integrity, availability, and
+              security.
+            </li>
+            <li>
+              Actively controlled access permissions and privileges,
+              implementing authentication and authorization mechanisms using
+              mysqldump and pg_dump.
+            </li>
+            <li>Provided technical support, identified and resolved issues.</li>
+            <li>
+              Monitored database performance using MySQL Workbench and psql,
+              identified and resolved bottlenecks, and optimized SQL queries and
+              database schema to improve system performance.
+            </li>
+            <li>
+              Actively contributed to documentation of the database system.
+            </li>
+          </ul>
+        </div>
+        <hr />
+      </accordion-group>
+
+      <accordion-group [(isOpen)]="isEducationOpen">
+        <button
+          class="btn btn-block justify-content-between d-flex w-100"
+          accordion-heading
+        >
+          <div style="visibility: hidden">></div>
+          <div class="btn-link">Education</div>
+
+          <div style="width: 10.95px">
+            <div *ngIf="!isEducationOpen" style="color: white">></div>
+            <div *ngIf="isEducationOpen" style="color: white">v</div>
+          </div>
+        </button>
+
+        <div style="text-align: left">
+          <h2 class="mb-0">Master of Computer Application (MCA)</h2>
+          <h3 class="text-primary">Savitribai Phule Pune University</h3>
+          <ul>
+            <li>Software Engineering</li>
+            <li>GPA: 3.33</li>
+            <li>2018</li>
+          </ul>
+        </div>
+        <hr />
+        <div style="text-align: left">
+          <h2 class="mb-0">Bachelor of Computer Science (BCS)</h2>
+          <h3 class="text-primary">Bakhtar University</h3>
+          <ul>
+            <li>Programming</li>
+            <li>GPA: 2.30</li>
+            <li>2013</li>
+          </ul>
+        </div>
+        <hr />
+        <div style="text-align: left">
+          <h2 class="mb-0">
+            Diploma for Public Administration and Management(IT)
+          </h2>
+          <h3 class="text-primary">
+            National Institute of Management and Administration (NIMA)
+          </h3>
+          <ul>
+            <li>Information Technology</li>
+            <li>GPA: 3.21</li>
+            <li>2011</li>
+          </ul>
+        </div>
+      </accordion-group>
+
+      <accordion-group [(isOpen)]="isCertificationOpen">
+        <button
+          class="btn btn-block justify-content-between d-flex w-100"
+          accordion-heading
+        >
+          <div style="visibility: hidden">></div>
+          <div class="btn-link">Certifications</div>
+
+          <div style="width: 10.95px">
+            <div *ngIf="!isCertificationOpen" style="color: white">></div>
+            <div *ngIf="isCertificationOpen" style="color: white">v</div>
+          </div>
+        </button>
+
+        <div style="text-align: left">
+          <h2 class="mb-0">Cisco Certified Network Associate(CCNA)</h2>
+          <h3 class="text-primary">American University of Afghanistan</h3>
+          <ul>
+            <li>Certificate</li>
+            <li>2014</li>
+          </ul>
+        </div>
+        <hr />
+        <div style="text-align: left">
+          <h2 class="mb-0">CompTIA Network+</h2>
+          <h3 class="text-primary">American University of Afghanistan</h3>
+          <ul>
+            <li>Certificate</li>
+            <li>2013</li>
+          </ul>
+        </div>
+        <hr />
+        <div style="text-align: left">
+          <h2 class="mb-0">MCITP Enterprise Administration</h2>
+          <h3 class="text-primary">American University of Afghanistan</h3>
+          <ul>
+            <li>Certificate</li>
+            <li>2013</li>
+          </ul>
+        </div>
+        <hr />
+        <div style="text-align: left">
+          <h2 class="mb-0">CompTIA A+</h2>
+          <h3 class="text-primary">American University of Afghanistan</h3>
+          <ul>
+            <li>Certificate</li>
+            <li>2012</li>
+          </ul>
+        </div>
+        <hr />
+        <div style="text-align: left">
+          <h2 class="mb-0">
+            Leading Inclusive 4IR: Empowering Women in Afghanistan for the
+            Future of Work through Digital Reskilling
+          </h2>
+          <h3 class="text-primary">
+            United Nations Institute for Training and Research (UNITAR)
+          </h3>
+          <ul>
+            <li>Certificate</li>
+            <li>2021</li>
+          </ul>
+        </div>
+      </accordion-group>
+
+      <accordion-group [(isOpen)]="isSkillsOpen">
+        <button
+          class="btn btn-block justify-content-between d-flex w-100"
+          accordion-heading
+        >
+          <div style="visibility: hidden">></div>
+          <div class="btn-link">Skills</div>
+
+          <div style="width: 10.95px">
+            <div *ngIf="!isSkillsOpen" style="color: white">></div>
+            <div *ngIf="isSkillsOpen" style="color: white">v</div>
+          </div>
+        </button>
+
+        <div class="row" style="text-align: left">
+          <div class="col">
+            <h4>Programming Languages:</h4>
+            <ul>
+              <li>Python</li>
+              <li>JavaScript</li>
+              <li>C++</li>
+              <li>C#</li>
+              <li>Ruby</li>
+              <li>PHP</li>
+              <li>Swift</li>
+              <li>TypeScript</li>
+            </ul>
+          </div>
+          <div class="col">
+            <h4>Frameworks & Libraries:</h4>
+            <ul>
+              <li>Spring Boot</li>
+              <li>React.js</li>
+              <li>Angular</li>
+              <li>Vue.js</li>
+              <li>Django</li>
+              <li>Flask</li>
+              <li>.NET Framework</li>
+              <li>Node.js</li>
+              <li>Express.js</li>
+              <li>Hibernate</li>
+              <li>Bootstrap</li>
+              <li>jQuery</li>
+            </ul>
+          </div>
+          <div class="col">
+            <h4 class="mb-0">Databases:</h4>
+            <ul>
+              <li>MySQL</li>
+              <li>PostgreSQL</li>
+              <li>MongoDB</li>
+              <li>Oracle</li>
+              <li>Microsoft SQL Server</li>
+              <li>Firebase</li>
+            </ul>
+          </div>
+          <div class="col">
+            <h4 class="mb-0">Version Control & CI/CD:</h4>
+            <ul>
+              <li>Git</li>
+              <li>GitHub</li>
+              <li>GitLab</li>
+              <li>Bitbucket</li>
+              <li>Jenkins</li>
+              <li>Docker</li>
+              <li>Kubernetes</li>
+            </ul>
+          </div>
+          <div class="col">
+            <h4 class="mb-0">Cloud Platforms:</h4>
+            <ul>
+              <li>AWS</li>
+              <li>Microsoft Azure</li>
+              <li>Google Cloud Platform</li>
+              <li>Heroku</li>
+            </ul>
+          </div>
+          <div class="col">
+            <h4 class="mb-0">Testing & Automation:</h4>
+            <ul>
+              <li>Selenium</li>
+              <li>JUnit</li>
+              <li>NUnit</li>
+              <li>Postman</li>
+              <li>TestNG</li>
+              <li>Mocha</li>
+              <li>Chai</li>
+              <li>Cypress</li>
+              <li>Jasmine</li>
+              <li>PyTest</li>
+            </ul>
+          </div>
+          <div class="col">
+            <h4 class="mb-0">Software Development Concepts:</h4>
+            <ul>
+              <li>Object-Oriented Programming (OOP)</li>
+              <li>RESTful APIs</li>
+              <li>GraphQL</li>
+              <li>Microservices Architecture</li>
+              <li>Agile/Scrum methodologies</li>
+              <li>MVC Pattern</li>
+              <li>Design Patterns</li>
+              <li>Test-Driven Development (TDD)</li>
+              <li>Continuous Integration/Continuous Deployment (CI/CD)</li>
+              <li>DevOps practices</li>
+            </ul>
+          </div>
+          <div class="col">
+            <h4 class="mb-0">Other Tools & Technologies:</h4>
+            <ul>
+              <li>IntelliJ IDEA</li>
+              <li>Eclipse</li>
+              <li>Visual Studio Code</li>
+              <li>JIRA</li>
+              <li>Trello</li>
+              <li>Asana</li>
+              <li>Jenkins</li>
+              <li>Terraform</li>
+              <li>Ansible</li>
+            </ul>
+          </div>
+          <div class="col">
+            <h4 class="mb-0">Soft Skills:</h4>
+            <ul>
+              <li>Problem-solving</li>
+              <li>Analytical thinking</li>
+              <li>Team collaboration</li>
+              <li>Communication skills</li>
+              <li>Time management</li>
+              <li>Adaptability</li>
+            </ul>
+          </div>
+        </div>
+      </accordion-group>
+
+      <accordion-group [(isOpen)]="isLanguagesOpen">
+        <button
+          class="btn btn-block justify-content-between d-flex w-100"
+          accordion-heading
+        >
+          <div style="visibility: hidden">></div>
+          <div class="btn-link">Languages</div>
+
+          <div style="width: 10.95px">
+            <div *ngIf="!isLanguagesOpen" style="color: white">></div>
+            <div *ngIf="isLanguagesOpen" style="color: white">v</div>
+          </div>
+        </button>
+
+        <div class="row" style="text-align: left">
+          <div class="col">
+            <h4 class="mb-0">English:</h4>
+            <ul>
+              <li>Reading:Fluent</li>
+              <li>Writing:Fluent</li>
+              <li>Speaking:Fluent</li>
+            </ul>
+          </div>
+          <div class="col">
+            <h4 class="mb-0">Darsi/Dari:</h4>
+            <ul>
+              <li>Reading:Fluent</li>
+              <li>Writing:Fluent</li>
+              <li>Speaking:Fluent</li>
+            </ul>
+          </div>
+          <div class="col">
+            <h4 class="mb-0">Pashto:</h4>
+            <ul>
+              <li>Reading:Fluent</li>
+              <li>Writing:Fluent</li>
+              <li>Speaking:Fluent</li>
+            </ul>
+          </div>
+          <div class="col">
+            <h4 class="mb-0">Arabic:</h4>
+            <ul>
+              <li>Reading:Fluent</li>
+              <li>Writing:Fluent</li>
+              <li>Speaking:Fluent</li>
+            </ul>
+          </div>
+        </div>
+      </accordion-group>
+    </accordion>
+  </div>
+</div>
